@@ -1,0 +1,11 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- xml로 DI될 컴포넌트(자바객체) 기술
+    <bean id="calculator" class = "com.mycom.myapp.calc.xml.Calculator"></bean>
+    -->
+    <!-- xml로 spring에게 너 저기 가서 컴포넌트(자바객체) annotation을 찾아라, -->
+    <context:component-scan base-package="com.mycom.myapp.calc.annotation"></context:component-scan>
+</beans>
