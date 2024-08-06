@@ -24,5 +24,6 @@ public class HasaCalculator {
     public int add(int n1, int n2) {
         System.out.println("HasaCalculator add()");
         return calculator.add(n1, n2);
+
     }
 }
